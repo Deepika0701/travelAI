@@ -1,0 +1,22 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  width: 579px;
+  height: 343px;
+}
+.card_image img {
+  width: 570px;
+  height: 340px;
+  border-radius: 20px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 4px 8px 20px 0px #000;
+}
+.card_text p {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+
+  font-weight: 700;
+  line-height: normal;
+}

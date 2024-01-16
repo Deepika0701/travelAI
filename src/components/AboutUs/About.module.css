@@ -1,0 +1,32 @@
+.about_bg {
+  display: flex;
+  flex-direction: column;
+  height: 558px;
+  background: #b36100;
+}
+.about_heading {
+  margin-left: 103px;
+  margin-top: 124px;
+}
+.about_heading p {
+  color: #f9f9f9;
+  text-shadow: 11px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about_description {
+  margin-top: 25px;
+  margin-left: 103px;
+  width: 1099px;
+  height: 293px;
+  flex-shrink: 0;
+}
+.about_description p {
+  color: #fff;
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 400;
+}

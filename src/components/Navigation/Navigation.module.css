@@ -1,0 +1,23 @@
+.nav_container{
+    display: flex;
+    background-color: black;
+    height: 77px;
+    align-items: center;
+    width: auto;
+    font-size: 24px;
+}
+
+.logo{
+    width:1280px;
+    margin-left: 80px;
+    text-align: center;
+}
+.logo p{
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    color: var(--orange);
+}

@@ -1,0 +1,22 @@
+.planMain_container {
+  display: flex;
+  height: 76vh;
+  background-position: center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+.plan_heading {
+  margin-top: 126px;
+  margin-left: 161px;
+  width: 324px;
+  height: 201px;
+}
+.plan_heading p {
+  color: #f9f9f9;
+  text-shadow: 11px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 48px;
+  font-weight: 700;
+}
+
