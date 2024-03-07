@@ -20,4 +20,5 @@ ul{
 }
 li{
     color: var(--orange);
+    cursor: pointer;
 }

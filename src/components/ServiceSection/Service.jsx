@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Service.module.css";
 import Cards from "../Cards/cards";
+import { useNavigate } from "react-router-dom";
 function Service() {
+  const Navigator=useNavigate()
   return (
     <>
       <div className={styles.service_container}>
@@ -10,7 +12,8 @@ function Service() {
         </div>
         <div className={styles.service_cards}>
           <div className={styles.service_cards_child}>
-            <Cards text="Plan your trip" img="images/service.png"/>
+            <Cards onClick={()=>{Navigator("/Plan")
+           console.log('clicked')}} text="Plan your trip" img="images/service.png"/>
           </div>
           <div className={styles.service_cards_child}>
             <Cards text="Destination Recommendation" img="images/destination.png" />

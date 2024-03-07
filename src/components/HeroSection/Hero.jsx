@@ -20,10 +20,10 @@ function Hero() {
               Uncover the best kept secrets of Agra with our curated travel
               itineraries
             </p>
-          </div>
+          </div> 
           <div className={styles.hero_btn}>
           <Button onClick={()=>{Navigator("/Itinerary")
-           console.log('clicked')}} text="Click here"/>
+           console.log('clicked')}}text="Click here"/>
           </div>
          
         </div>

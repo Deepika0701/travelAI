@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Navigation.module.css';
+import { useNavigate } from "react-router-dom";
 
 function Navigation() {
+  const Navigator=useNavigate()
   return (
     <>
       <div className={styles.nav_container}>
@@ -9,7 +11,8 @@ function Navigation() {
           <p>travelAI</p>
         </div>
         <ul className="nav-links">
-          <li>Home</li>
+          <li onClick={()=>{Navigator("/")
+           console.log('clicked')}}>Home</li>
         </ul>
       </div>
     </>
