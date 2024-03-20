@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./Itinerary.module.css";
 import ItineraryCard from "../ItineraryCard/ItineraryCard";
+import { useLocation } from "react-router-dom";
 function ItineraryDisplay() {
+  const location=useLocation();
+  console.log(location.state.data.result)
   return (
     <>
+    <h1>{location.state.data.result}</h1>
       <div
         className={styles.itineraryHeader}
         style={{ backgroundImage: 'url("images/agra.jpg")' }}
