@@ -32,9 +32,9 @@ function FormSection() {
     const options = {
       method: "POST",
       headers: {
-        'content-type': 'application/json',
-		'X-RapidAPI-Key': '81e293922amsh279e6d43e312e4fp18ece7jsn42e5df699d02',
-		'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com',
+        "content-type": "application/json",
+        "X-RapidAPI-Key": "7e5061a38fmshd1e129232799580p15e432jsna71e642bee34",
+        "X-RapidAPI-Host": "chatgpt-42.p.rapidapi.com",
       },
       body: JSON.stringify({
         messages: [
@@ -65,11 +65,100 @@ function FormSection() {
     };
 
     try {
-      const response = await fetch(url, options);
-      const result = await response.json();
+      // const response = await fetch(url, options);
+      // const result = await response.json();
+      const result = 
+      [
+          {
+              "Date": "March 22, 2024",
+              "Destination": "Jaipur",
+              "Companion": "Solo Traveler",
+              "Day1": [
+                  {
+                      "Daytime": "Morning",
+                      "Time": "8:00 AM - 10:00 AM",
+                      "PlaceName": "Amer Fort",
+                      "Address": "Devisinghpura, Amer, Jaipur, Rajasthan 302001 India",
+                      "Ratings": 4.6,
+                      "ShortDescription": "Start your journey with a visit to the majestic Amber Palace.",
+                      "Food": {
+                          "Breakfast": "Café Coffee Day (7:30 AM - 9:30 PM), Located at Near Jal Mahal, Amer Rd, Jaipur, Rajasthan 302002, Rating: 4.2"
+                      }
+                  },
+                  {
+                      "Daytime": "Afternoon",
+                      "Time": "11:00 AM - 1:00 PM",
+                      "PlaceName": "City Palace",
+                      "Address": "Tulsi Marg, Gangori Bazaar, Jaipur, Rajasthan 302002 India",
+                      "Ratings": 4.5,
+                      "ShortDescription": "Explore City Palace, one of the most famous tourist attractions in Jaipur.",
+                      "Food": {
+                          "Lunch": "Indian Coffee House (9:00 AM - 9:00 PM) located at Jawahar Lal Nehru Marg, MI Road, near Vidhan Sabha, Jaipur, Rajasthan 302001, Rating: 4.2"
+                      },
+                      "Leisure": {
+                          "Activity": "Post-lunch shopping at Johari bazaar (open until 9 PM)"
+                      }
+                  },
+                  {
+                      "Daytime": "Evening",
+                      "Time": "5:00 PM - 7:00 PM",
+                      "PlaceName": "Hawa Mahal",
+                      "Address": "Hawa Mahal Rd, Badi Choupad, J.D.A. Market, Pink City, Jaipur, Rajasthan 302002 India",
+                      "Ratings": 4.4,
+                      "ShortDescription": "Capture stunning sunset photos at Hawa Mahal before visiting local markets.",
+                      "Food": {
+                          "Dinner": "Chokhi Dhani (5:30 PM - 11 PM), 12 Miles From Jaipur, Tonk Road, Exit No. 8, Jaipur, Rajasthan 302028, Rating: 4.4"
+                      },
+                      "Entertainment": {
+                          "Event": "Traditional Dance & Music Performances during dinner at Choki Dhani"
+                      }
+                  }
+              ]
+          },
+          {
+              "Date": "March 23, 2024",
+              "Destination": "Jaipur",
+              "Companion": "Solo Traveler",
+              "Day2": [
+                  {
+                      "Daytime": "Morning",
+                      "Time": "9:00 AM - 10:30 AM",
+                      "PlaceName": "Jantar Mantar Observatory",
+                      "Address": "Gangori Bazaar, J.D.A. Market, Kanwar Nagar, Jaipur, Rajasthan 302002 India",
+                      "Ratings": 4.6,
+                      "ShortDescription": "Discover astronomical instruments dating back centuries ago.",
+                      "Food": {
+                          "Breakfast": "Neros (8:30 AM - 10:30 PM), C Scheme, Jacob Road Crossing, Jaipur, Rajasthan 302001, Rating: 4.4"
+                      }
+                  },
+                  {
+                      "Daytime": "Afternoon",
+                      "Time": "12:00 PM - 2:00 PM",
+                      "PlaceName": "Albert Hall Museum",
+                      "Address": "Adarsh Nagar, Ram Niwas Garden, Jaipur, Rajasthan 302004 India",
+                      "Ratings": 4.4,
+                      "ShortDescription": "Visit Albert Hall Museum showcasing artifacts reflecting Rajputana, Persia and Europe history.",
+                      "Food": {
+                          "Lunch": "Anokhi Cafe (9:30 AM - 10:00 PM), 2nd Floor, C-11 Prithviraj Road, C scheme, Ashok Nagar, Jaipur, Rajasthan 302001, Rating: 4.4"
+                      }
+                  },
+                  {
+                      "Daytime": "Evening",
+                      "Time": "4:00 PM - 6:00 PM",
+                      "PlaceName": "Birla Mandir Temple",
+                      "Address": "Jawahar Lal Nehru Marg, Tilak Nagar, Jaipur, Rajasthan 302004 India ",
+                      "Ratings": 4.5,
+                      "ShortDescription": "Experience tranquility while exploring this beautiful white marble temple dedicated to Lord Vishnu.",
+                      "Food": {
+                        "Dinner": "Steam Restaurant And Bar (12:30 PM - 12:00 AM), Ahinsa Circle, opp. Hotel Om Tower, C-Scheme, Ashok Nagar, Jaipur, Rajasthan 302001, Rating: 4.3"
+                    }
+                  }
+              ]
+          }
+      ]
       
       setResponseData(result);
-      console.log(result)
+      console.log(result.JSON)
     } catch (error) {
       console.error(error);
     }

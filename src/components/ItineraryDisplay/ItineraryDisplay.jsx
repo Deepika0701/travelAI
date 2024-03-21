@@ -2,41 +2,53 @@ import React from "react";
 import styles from "./Itinerary.module.css";
 import ItineraryCard from "../ItineraryCard/ItineraryCard";
 import { useLocation } from "react-router-dom";
+
 function ItineraryDisplay() {
-  const location=useLocation();
-  console.log(location.state.data.result)
+  const location = useLocation();
+  const itineraryData = location.state.data;
+
   return (
     <>
-    <h1>{location.state.data.result}</h1>
       <div
         className={styles.itineraryHeader}
-        style={{ backgroundImage: 'url("images/agra.jpg")' }}
+
+        
       >
         <div className={styles.numofdays}>
-        <p>3 days in Agra</p>
+          <p>
+            {itineraryData.length} days in {itineraryData[0].Destination}
+          </p>
         </div>
         <div className={styles.your_itinerary}>
-        <p>Your itinerary</p>
+          <p className={styles.pad20}>Your itinerary</p>
+        </div>
       </div>
-      </div>
-    
 
-      <div className={styles.flex_cards}>
-        <div className={styles.days}>
-          <p>Day 1</p>
-        </div>
-        <div className={styles.columnflex}>
-          <div className={styles.card_margin}>
-            <ItineraryCard />
-          </div >
-          <div className={styles.card_margin}>
-            <ItineraryCard />
+      {itineraryData.map((day, index) => (
+        <div className={styles.flex_cards} key={index}>
+          <div className={styles.days}>
+            <p>Day {index + 1}</p>
           </div>
-          <div className={styles.card_margin}>
-            <ItineraryCard />
+
+          <div className={styles.columnflex}>
+            {day[`Day${index + 1}`].map((activity, activityIndex) => (
+              <div className={styles.card_margin} key={activityIndex}>
+                <ItineraryCard
+                  daytime={activity.Daytime}
+                  time={activity.Time}
+                  placeName={activity.PlaceName}
+                  address={activity.Address}
+                  ratings={activity.Ratings}
+                  description={activity.ShortDescription}
+                  // food={activity.Food}
+                  // leisure={activity.Leisure}
+                  // entertainment={activity.Entertainment}
+                />
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      ))}
     </>
   );
 }

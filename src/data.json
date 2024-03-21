@@ -1,0 +1,74 @@
+const jsonData = `{
+    "Itinerary": {
+      "Date": "March 22, 2024",
+      "Destination": "Delhi",
+      "Companion": "Solo Traveler"
+    },
+    "Day1": [
+      {
+        "Daytime": "Morning",
+        "Time": "8:30 AM - 9:30 AM",
+        "Place_Name": "India Gate",
+        "Address": "Rajpath, India Gate, New Delhi, Delhi 110001",
+        "Ratings": 4.6,
+        "Short_Description": "A war memorial built for the soldiers who died during World War I."
+      },
+      {
+        "Daytime": "Breakfast",
+        "Time": "9:30 AM - 10:30 AM",
+        "Place_Name": "NA",
+        "Address": "Nearby India Gate",
+        "Ratings": "NA",
+        "Short_Description": "Recommendation available upon arrival at India Gate"
+      },
+      {
+        "Daytime": "Afternoon",
+        "Time": "11:00 AM - 1:00 PM",
+        "Place_Name": "Red Fort (Lal Qila)",
+        "Address": "Netaji Subhash Marg, Chandni Chowk, New Delhi, Delhi 110006",
+        "Ratings": 4.5,
+        "Short_Description": "An iconic red sandstone fortress built by Shah Jahan, known for its architectural brilliance."
+      },
+      {
+        "Daytime": "Lunch",
+        "Time": "1:00 PM - 2:00 PM",
+        "Place_Name": "Karim's",
+        "Address": "Jama Masjid Rd, opposite gate no 1, Jama Masjid, New Delhi, Delhi 110006",
+        "Ratings": 4.4,
+        "Short_Description": "Famous for serving delicious Mughlai cuisine since 1913."
+      },
+      {
+        "Daytime": "Evening",
+        "Time": "4:00 PM - 7:00 PM",
+        "Place_Name": "Humayun’s Tomb",
+        "Address": "Mathura Road Opposite Dargah Nizamuddin Aulia, New Delhi, Delhi 110013",
+        "Ratings": 4.6,
+        "Short_Description": "World Heritage Site showcasing beautiful Persian-style gardens surrounding Humayun's tomb."
+      },
+      {
+        "Daytime": "Dinner",
+        "Time": "8:00 PM - 10:00 PM",
+        "Place_Name": "Bukhara",
+        "Address": "ITC Maurya, Diplomatic Enclave, Sardar Patel Marg, New Delhi, Delhi 110021",
+        "Ratings": 4.7,
+        "Short_Description": "Upmarket eatery offering North Indian dishes within elegant interiors; book ahead for priority seating."
+      }
+    ]
+  }`;
+  
+  // Parse the JSON string into a JavaScript object
+  const data = JSON.parse(jsonData);
+  
+  // Access the properties and values
+  const itinerary = data.Itinerary;
+  const date = itinerary.Date;
+  const destination = itinerary.Destination;
+  const companion = itinerary.Companion;
+  const day1Activities = data.Day1;
+  
+  // Log the values to the console
+  console.log("Date:", date);
+  console.log("Destination:", destination);
+  console.log("Companion:", companion);
+  console.log("Day 1 Activities:", day1Activities);
+  

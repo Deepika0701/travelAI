@@ -1,9 +1,11 @@
 .itineraryHeader {
-  max-height: 470px;
+  /* max-height: 627px; */
+  max-height: 400px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 90vh;
+  background-image: url("D:\Final Project\Project1\travelAI\public\images\agra.jpg");
   background-position: center fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,24 +15,26 @@
   align-items: center;
   justify-content: center;
 }
-.numofdays{
-    color: #FFF;
-text-align: center;
-text-shadow: 4px 4px 0px #000;
-font-family: Ubuntu;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.numofdays {
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 4px 0px #000;
+  font-family: Ubuntu;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .days {
-
-  margin-bottom: 10px;
+  /* margin-bottom: 15px; */
   background-color: black;
   color: white;
   text-align: center;
+  justify-content: center;
   width: 70px;
   height: 20px;
+  margin: 0 auto;
   padding: 5px;
   border-radius: 22px;
   background: #5f5a5a;
@@ -38,26 +42,26 @@ line-height: normal;
 .flex_cards {
   margin: 0 auto;
   width: 1300px;
-
 }
-.columnflex{
+.columnflex {
   display: flex;
   flex-direction: row;
 }
-.card_margin{
-    margin: auto;
+.card_margin {
+  margin: auto;
 }
-.your_itinerary
-{
-text-align: center;
-margin-bottom: 50px;
-margin-top: 100px;
-width: 150px;
-height: 30px;
-border-radius: 45px;
-background: #FF8A00;
-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.51);
-color: #FFF;
-font-weight: 700;
+.your_itinerary {
+  text-align: center;
+  margin-top: 30px;
+  width: 150px;
+  height: 30px;
+  /* z-index: 10%; */
+  border-radius: 45px;
+  background: #ff8a00;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.51);
+  color: #fff;
+  font-weight: 700;
 }
-
+.pad20 {
+  margin: 4px;
+}
