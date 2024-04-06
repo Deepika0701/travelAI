@@ -19,10 +19,6 @@
   width: 305px;
   height: 150px;
 }
-/* 
-.text-lg {
-  font-size: 1.25rem;
-} */
 
 .font_semibold {
   font-weight: 300;
@@ -53,8 +49,8 @@
 }
 
 .star {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #ffd700;
   clip-path: polygon(
     50% 0%,
@@ -74,9 +70,7 @@
   fill: none;
   stroke: #ccc;
 }
-.text_sm1{
 
-}
 .text_sm {
   font-size: 0.875rem;
 }

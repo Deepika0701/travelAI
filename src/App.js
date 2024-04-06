@@ -12,14 +12,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navigation/>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Plan" element={<Plantrip />} />
           <Route path="/Itinerary" element={<Itinerary />} />
           <Route path="/ItineraryCard" element={<ItineraryCard />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );
