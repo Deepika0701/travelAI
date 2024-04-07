@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import styles from "./FormSection.module.css";
 import Button from "../Button/button";
 import { DatePicker } from "antd";
 import { useState } from "react";
-import moment from "moment";
 import { Navigate } from "react-router-dom";
+import Loader from "react-js-loader";
 
 const { RangePicker } = DatePicker;
 
@@ -17,6 +17,7 @@ function FormSection() {
   const [destination, setDestination] = useState("");
   const [companion, setCompanion] = useState("");
   const [responseData, setResponseData] = useState(null);
+  const [loading, setLoading] = useState(false);
 
    const formatDate = (date) => {
     const options = { day: 'numeric', month: 'long', year: 'numeric' };
@@ -24,7 +25,7 @@ function FormSection() {
   };
 
   const onSubmithandler = async (e) => {
-    
+    setLoading(true);
     const startDate = formatDate(dates[0]["$d"]);
     const endDate = formatDate(dates[1]["$d"]);
     console.log(startDate + ' - ' + endDate)
@@ -51,6 +52,7 @@ function FormSection() {
                 "Breakfast": "Restaurant Name (Type),
                 "Rating": (on Google Maps),
                 "Distance from Place": (in metre or km)
+                (a suggestion dont write google maps when you provide the details)
               }
             },
             ... other activities
@@ -69,6 +71,9 @@ function FormSection() {
       setResponseData(rawData)
     } catch (error) {
       console.error(error);
+    }
+    finally {
+      setLoading(false); // Set loading to false when done fetching
     }
   };
 
@@ -130,6 +135,7 @@ function FormSection() {
 
             <div className={styles.form_btn}>
               <Button type={"submit"} text="Plan my trip" />
+              {loading && <Loader type="spinner-default" bgColor={"#000000"}  size={100} />} 
             </div>
           </form>
         </div>

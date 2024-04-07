@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './ItineraryCard.module.css';
 
-function ItineraryCard({ daytime, time, placeName, address, ratings, description }) {
+function ItineraryCard({ daytime, time, placeName, address, ratings, description,food }) {
   // Calculate the number of filled stars based on ratings 
   const filledStars = Math.round(ratings);
   // Calculate the number of empty stars
@@ -19,8 +19,7 @@ function ItineraryCard({ daytime, time, placeName, address, ratings, description
     }
     return stars;
   };
-
-  return (
+  return (<>
     <div className={styles.card}>
       <div className={styles.content}>
         <p className={`styles.text-lg ${styles.font_semibold}`}> {daytime} | {time} </p><br />
@@ -31,7 +30,10 @@ function ItineraryCard({ daytime, time, placeName, address, ratings, description
           {renderStars()}
         </div>
       
-        <p className={styles.text_sm}>{description}</p>
+      <div className={styles.description}>
+      <p className={styles.text_sm}>{description}</p>
+      </div>
+        
       </div>
       <div className={styles.image_container}>
         <img
@@ -40,7 +42,12 @@ function ItineraryCard({ daytime, time, placeName, address, ratings, description
           src="images/taj-mahal.jpg"
         />
       </div>
+
     </div>
+    <div className={styles.food_Card}>
+<p>{food}</p>
+      </div>
+    </>
   );
 }
 
