@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import styles from "./ItineraryCard.module.css";
 
-const unsplashAccessKey = 'gM7QPAAEmxq98i3rdl137l9Q3xxPmNzF_VMRWir5B9E'; // Replace with your access key
+const unsplashAccessKey = 'gM7QPAAEmxq98i3rdl137l9Q3xxPmNzF_VMRWir5B9E'; 
 
 function ItineraryCard({ daytime, time, placeName, address, ratings, description, food, destination }) {
 
-  const [imageUrl, setImageUrl] = useState('img'); // Default image
+  const [imageUrl, setImageUrl] = useState('../../../public/images/agra.jpg'); // Default image
 
   useEffect(() => {
     const fetchData = async () => {
