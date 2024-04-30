@@ -49,6 +49,7 @@ function ItineraryDisplay(e) {
          
            
           <ItineraryCard
+            destination = {destination}
             daytime={activity.Daytime}
             time={activity.Time}
             placeName={activity["Place Name"]}
