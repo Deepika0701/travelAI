@@ -1,77 +1,54 @@
-# Getting Started with Create React App
+# TravelAI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TravelAI is a comprehensive solution designed to address all travel-related queries, providing a one-stop solution for travelers. The project offers various features, including itinerary planning, destination recommendations, and community collaboration. Currently, we have implemented the Itinerary Planning module.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Itinerary Planning
+- **Destination Input:** Users can enter their desired travel destination.
+- **Date Selection:** Users can specify the travel dates.
+- **Companions:** Users can indicate who they are traveling with (e.g., family, friends, solo).
+- **Customized Itinerary:** Based on the provided inputs, TravelAI fetches data from the Gemini API to create a tailored itinerary.
+- **User-Friendly Form:** Users fill out an itinerary form, and the customized prompt is sent to the Gemini API. The returned data is then displayed to the user.
 
-### `npm start`
+### 2. Destination Recommendations (Planned)
+- **Personalized Suggestions:** Based on user preferences and travel history.
+- **Top Destinations:** Trending travel spots and hidden gems.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Community & Collaboration (Planned)
+- **Travel Groups:** Connect with other travelers.
+- **Shared Experiences:** Exchange tips, stories, and recommendations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How It Works
 
-### `npm test`
+1. **User Input:**
+   - The user enters the destination, travel dates, and companion details into the itinerary form.
+2. **Data Fetching:**
+   - A customized prompt is generated and sent to the Gemini API.
+3. **Itinerary Display:**
+   - The data fetched from the Gemini API is processed and displayed to the user in the form of a detailed itinerary.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get started with TravelAI, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```sh
+   git clone [https://github.com/yourusername/travelai.git]
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd travelai
+   ```
+3. Install the necessary dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the application:
+   ```sh
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-npm install antd and npm install moment for calendar design
-extension:react snippet
-tailwind
-shedcn
-v0.dev
+## Contributors
+   - Deepika
+   - Mohit Agarwal
