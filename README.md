@@ -28,6 +28,7 @@ TravelAI is a comprehensive solution designed to address all travel-related quer
 3. **Itinerary Display:**
    - The data fetched from the Gemini API is processed and displayed to the user in the form of a detailed itinerary.
 
+![screenshot](public/images/s1.png)
 ## Getting Started
 
 To get started with TravelAI, follow these steps:
